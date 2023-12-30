@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif !important;
+}
+
+* {
+  scroll-margin-top: 80px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff2b;
+}
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  // @apply bg-gray-50;
+  font-family: "DM Sans", sans-serif !important;
+  overflow-x: hidden !important;
+
+  &.no-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+#app {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll !important;
+  @include shadow();
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+
+  @include media("<tablet") {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    transform: none;
+    padding: 0rem;
+    box-shadow: none !important;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+main{
+  height: auto;
+  @include media("<tablet") {
+   section{
+    margin: 2rem 0;
+   }
+  }
+}
+
+.space{
+  width: 100%;
+  height: 10vh;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: "";
+  display: inline-block;
+  background: green;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  // -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+.custom-file-input:active::before {
+  background: green;
+}
+
+.app-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.border-50 {
+  border-radius: 50%;
+}
+
+.bounce {
+  transition: all 0.5s ease-in-out;
+  animation-name: bounce;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.react-photo-gallery--gallery {
+  img {
+    width: 100px !important;
+    height: 100px !important;
+    &:nth-child(1) {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}
+
