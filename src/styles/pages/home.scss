@@ -1,518 +1,528 @@
 .j_home {
-    width: 100%;
-    padding: 0 5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-    .intro-text {
-        color: #000;
+  .intro-text {
+    color: #000;
+  }
+
+  &-intro {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+    padding: 0 2rem;
+    p {
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      // letter-spacing: -3.24px;
     }
+
+    span {
+      color: $orange;
+    }
+  }
+  &-intro2 {
+    width: 50%;
+    margin: 4rem 0;
+  }
+
+  @include media("<tablet") {
+    // height:0vh;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    padding: 5rem 0;
 
     &-intro {
-        width: 70%;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 5rem 0;
-        padding: 0 2rem;
-        p {
-            font-size: 54px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            // letter-spacing: -3.24px;
-        }
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0 2rem;
+      p {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
 
-        span {
-            color: $orange;
-        }
+      span {
+        // font-weight: 900;
+        color: $orange;
+        // text-transform: uppercase;
+      }
     }
+
     &-intro2 {
-        width: 50%;
-        margin: 4rem 0;
+      display: none;
     }
 
-    @include media("<tablet") {
-        // height:0vh;
-        flex-direction: column;
-        padding: 0;
-        justify-content: center;
-        padding: 5rem 0;
-
-        &-intro {
-            width: 100%;
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0;
-            padding: 0 2rem;
-            p {
-                font-size: 34px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-            }
-
-            span {
-                // font-weight: 900;
-                color: $orange;
-                // text-transform: uppercase;
-            }
-        }
-
-        &-intro2 {
-            display: none;
-        }
-
-        .w-sm {
-            margin: auto 0.5rem;
-            width: 35px;
-            height: 35px;
-        }
-
-        .intro-text {
-            font-weight: 500;
-            font-size: 12px;
-        }
+    .w-sm {
+      margin: auto 0.5rem;
+      width: 35px;
+      height: 35px;
     }
+
+    .intro-text {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
 }
 
 .j_mission {
-    width: 100%;
-    height: 80vh;
+  width: 100%;
+  //   height: 100vh;
 
-    padding: 0.5rem;
-    background-image: url("./../assets/home/mission/rose-petals_bg.png");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 0.5rem;
+  background-image: url("./../assets/home/mission/rose-petals_bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  &-content {
+    padding: 0.5rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
 
+    span {
+      color: $orange;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    p {
+      width: 70%;
+      color: $primary;
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  &-text {
+    width: 60%;
+    color: $primary;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .service-text {
+    color: #00072f;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @include media("<tablet") {
     &-content {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        span {
-            color: $orange;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-
-        p {
-            width: 55%;
-            color: $primary;
-            text-align: center;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
+      p {
+        width: 100%;
+        font-size: 22px;
+      }
     }
 
-    .service-text {
-        color: #00072f;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    .services-md {
+      padding: 2rem 0;
+      // flex
     }
-
-    @include media("<tablet") {
-        &-content {
-            p {
-                width: 100%;
-                font-size: 22px;
-            }
-        }
-
-        .services-md{
-            padding: 2rem 0;
-            // flex
-        }
-    }
+  }
 }
 .j_add-on {
-    width: 100%;
-    // height: 80vh;
-    padding: 1rem 0.5rem;
+  width: 100%;
+  // height: 80vh;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  &-content {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
 
+    span {
+      color: $orange;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    h2 {
+      width: 100%;
+      color: $primary;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 1rem 0;
+    }
+    p {
+      width: 55%;
+      color: $primary;
+      font-family: DM Sans;
+      font-size: 18px;
+      font-style: normal;
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    img {
+      margin: 0 0.5rem;
+    }
+  }
+
+  @include media("<tablet") {
     &-content {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
 
-        span {
-            color: $orange;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-
-        h2 {
-            width: 100%;
-            color: $primary;
-            text-align: center;
-            font-size: 52px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin: 1rem 0;
-        }
-        p {
-            width: 55%;
-            color: $primary;
-            font-family: DM Sans;
-            font-size: 18px;
-            font-style: normal;
-            margin: 1rem 0;
-        }
-
-        img {
-            margin: 0 0.5rem;
-        }
+      img {
+        width: 100%;
+        width: 50px;
+        height: 50px;
+      }
     }
-
-    @include media("<tablet") {
-        &-content {
-            h2 {
-                font-size: 24px;
-            }
-            p {
-                width: 100%;
-                font-size: 14px;
-            }
-
-            img {
-                width: 100%;
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
+  }
 }
 
 .j_engage {
-    width: 100%;
-    height: 80vh;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
 
+  &-left {
+    width: 50%;
+    padding: 2rem;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+
+    h2 {
+      color: $pink;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -3.84px;
+    }
+
+    p {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 156%; /* 24.96px */
+    }
+  }
+
+  @include media("<tablet") {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
     &-left {
-        width: 50%;
-        padding: 2rem;
+      width: 100%;
     }
     &-right {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 2rem;
+      width: 100%;
 
-        h2 {
-            color: $pink;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -3.84px;
-        }
+      h2 {
+        font-size: 28px;
+        letter-spacing: 0px;
+      }
 
-        p {
-            color: #000;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 156%; /* 24.96px */
-        }
+      p {
+        font-size: 18px;
+      }
     }
-
-    @include media("<tablet") {
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 0;
-        &-left {
-            width: 100%;
-        }
-        &-right {
-            width: 100%;
-
-            h2 {
-                font-size: 28px;
-                letter-spacing: 0px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
-    }
+  }
 }
 .j_excel {
-    width: 100%;
-    height: 80vh;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
 
+  &-left {
+    width: 50%;
+    padding: 2rem;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+
+    h2 {
+      color: $red;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -3.84px;
+    }
+
+    p {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 156%; /* 24.96px */
+    }
+  }
+
+  @include media("<tablet") {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
     &-left {
-        width: 50%;
-        padding: 2rem;
+      width: 100%;
     }
     &-right {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 2rem;
+      width: 100%;
 
-        h2 {
-            color: $red;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -3.84px;
-        }
+      h2 {
+        font-size: 28px;
+        letter-spacing: 0px;
+      }
 
-        p {
-            color: #000;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 156%; /* 24.96px */
-        }
+      p {
+        font-size: 18px;
+      }
     }
-
-    @include media("<tablet") {
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 0;
-        &-left {
-            width: 100%;
-        }
-        &-right {
-            width: 100%;
-
-            h2 {
-                font-size: 28px;
-                letter-spacing: 0px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
-    }
+  }
 }
 .j_empower {
-    width: 100%;
-    height: 80vh;
-    padding: 2rem 4rem;
+  width: 100%;
+  height: 80vh;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+
+  &-left {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
 
-    &-left {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 2rem;
-
-        h2 {
-            color: $green;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -3.84px;
-        }
-
-        p {
-            color: #000;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 156%; /* 24.96px */
-        }
+    h2 {
+      color: $green;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -3.84px;
     }
 
+    p {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 156%; /* 24.96px */
+    }
+  }
+
+  &-right {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  @include media("<tablet") {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
     &-right {
-        width: 50%;
-        padding: 2rem;
+      width: 100%;
     }
+    &-left {
+      width: 100%;
 
-    @include media("<tablet") {
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 0;
-        &-right {
-            width: 100%;
-        }
-        &-left {
-            width: 100%;
+      h2 {
+        font-size: 28px;
+        letter-spacing: 0px;
+      }
 
-            h2 {
-                font-size: 28px;
-                letter-spacing: 0px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
+      p {
+        font-size: 18px;
+      }
     }
+  }
 }
 
 .j_partner {
-    width: 100%;
-    height: 40vh;
-    background: $orange;
-    padding: 0.5rem;
-    background-image: url("./../assets/home/partner_bg.png");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  width: 100%;
+  height: 40vh;
+  background: $orange;
+  padding: 0.5rem;
+  background-image: url("./../assets/home/partner_bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
-    &-content {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .j_testiomnials {
-    width: 100%;
-    height: auto;
-    padding: 1rem 0.5rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  &-content {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
 
+    span {
+      color: $orange;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    h2 {
+      width: 100%;
+      color: $primary;
+      text-align: center;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 0.5rem 0;
+    }
+    p {
+      width: 75%;
+      color: $primary;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      margin: 0.5rem 0;
+    }
+
+    img {
+      margin: 0 0.5rem;
+    }
+  }
+
+  @include media("<tablet") {
     &-content {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
 
-        span {
-            color: $orange;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-
-        h2 {
-            width: 100%;
-            color: $primary;
-            text-align: center;
-            font-size: 38px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin: 0.5rem 0;
-        }
-        p {
-            width: 75%;
-            color: $primary;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            margin: 0.5rem 0;
-        }
-
-        img {
-            margin: 0 0.5rem;
-        }
+      img {
+        width: 100%;
+        width: 50px;
+        height: 50px;
+      }
     }
-
-    @include media("<tablet") {
-        &-content {
-            h2 {
-                font-size: 24px;
-            }
-            p {
-                width: 100%;
-                font-size: 14px;
-            }
-
-            img {
-                width: 100%;
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
+  }
 }
 
 .t_container {
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10rem;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+
+  .t_card {
+    width: 30%;
+    height: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ffece5;
+    box-shadow: 0px 60px 70px 0px rgba(252, 125, 74, 0.1);
+    margin: 0 1rem;
+
+    &-content {
+      .desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 156%;
+      }
+    }
+  }
+
+  @include media(">=LGdesktop") {
+    .t_card {
+      width: 20%;
+    }
+  }
+
+  @include media("<tablet") {
+    flex-direction: column;
+    align-items: normal;
 
     .t_card {
-        width: 30%;
-        height: auto;
-        padding: 1rem;
-        background: #fff;
-        border-radius: 8px;
-        border: 1px solid #ffece5;
-        box-shadow: 0px 60px 70px 0px rgba(252, 125, 74, 0.1);
-        margin: 0 1rem;
-
-        &-content {
-            .desc {
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 156%;
-            }
-        }
+      width: 100%;
+      margin: 0.5rem 0;
     }
-
-    @include media(">=LGdesktop") {
-        .t_card {
-            width: 20%;
-        }
-    }
-
-    @include media("<tablet") {
-        flex-direction: column;
-        align-items: normal;
-
-        .t_card {
-            width: 100%;
-            margin: 0.5rem 0;
-        }
-    }
+  }
 }

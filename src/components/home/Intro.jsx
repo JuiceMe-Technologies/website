@@ -1,18 +1,20 @@
-import WhatsAppIcon from '../../assets/whatsapp_icon.svg'
-import HeaderImage from '../../assets/home/home_header_image.svg'
+import WhatsAppIcon from "../../assets/whatsapp_icon.svg";
+import HeaderImage from "../../assets/home/home_header_image.png";
 export default function Intro() {
   return (
     <>
       <section className="j_home">
         <div className="j_home-intro">
           <p>
-            Helping companies
+            Get your
             <br />
-            <span className=""> Ensure any day is payday</span>
-            <span className="hidden">Track time attendance</span>
-            <span className="hidden">Process pay slips</span>
-            <span className="hidden">Send critical information</span>
+            <span className="">earnings </span> when
             <br />
+            you need them
+            {/* <span className="hidden">Track time attendance</span>
+              <span className="hidden">Process pay slips</span>
+              <span className="hidden">Send critical information</span> */}
+            {/* <br />
             <div className="flex">
               using
               <img
@@ -21,20 +23,25 @@ export default function Intro() {
                 alt="whatsapp-icon"
               />
               WhatsApp
-            </div>
+            </div> */}
           </p>
           <span className="intro-text my-2">
-            Earned Wage Access and HR Solution Designed for <br /> Africa’s
-            Workforce
+            Juiceme gives employees access to their salary for <br />
+            the days they worked any time before payday via <br /> WhatsApp
+            <img
+              className="inline w-5"
+              src={WhatsAppIcon}
+              alt="whatsapp-icon"
+            />
           </span>
-          <button className="w-52 p-4 bg-black text-white rounded md:my-2 my-5">
+          <button className="w-52 p-4 bg-black text-white rounded-xl md:my-2 my-5">
             Get Started
           </button>
         </div>
         <div className="j_home-intro2">
-          <img src={HeaderImage} width="500" height="500" alt="header-image" />
+          <img src={HeaderImage} width="700" height="500" alt="header-image" />
         </div>
       </section>
     </>
-  )
+  );
 }
