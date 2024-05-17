@@ -1,7 +1,7 @@
-import Icon1 from "../../assets/home/add-on/icon_1.svg";
-import Icon2 from "../../assets/home/add-on/icon_2.svg";
-import Icon3 from "../../assets/home/add-on/icon_3.svg";
-import Icon4 from "../../assets/home/add-on/icon_4.svg";
+import Icon1 from "../../assets/home/add-on/Frame_7556.svg";
+import Icon2 from "../../assets/home/add-on/Frame_7557.svg";
+import Icon3 from "../../assets/home/add-on/Frame_7558.svg";
+import Icon4 from "../../assets/home/add-on/Frame_7559.svg";
 import AddOnImage from "../../assets/home/add-on/image_1.svg";
 
 export default function HomeAddOn() {
@@ -24,12 +24,12 @@ export default function HomeAddOn() {
             <img src={Image5} alt="paymaster-logo" />
           </div> */}
         </div>
-        <section className="j_excel">
-          <div className="j_excel-left">
+        <section className="j_add-on-section">
+          <div className="j_add-on-left">
             <img src={AddOnImage} width="800" height="800" alt="addon-image" />
           </div>
 
-          <div className="j_excel-right my-5">
+          <div className="j_add-on-right my-5">
             <div className="flex my-2">
               <img className="my-auto" src={Icon3} alt="excel-icon" />
 

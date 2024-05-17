@@ -203,6 +203,42 @@
     }
   }
 
+  &-section {
+    width: 70%;
+    // height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &-left {
+    width: 50%;
+    padding: 2rem;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+
+    h2 {
+      color: $pink;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -3.84px;
+    }
+
+    p {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 156%; /* 24.96px */
+    }
+  }
+
   @include media("<tablet") {
     &-content {
       h2 {
@@ -217,6 +253,104 @@
         width: 100%;
         width: 50px;
         height: 50px;
+      }
+    }
+  }
+}
+
+.j_business {
+  width: 100%;
+  // height: 80vh;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+
+  &-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      width: 100%;
+      color: $primary;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 1rem 0;
+    }
+
+    p {
+      width: 55%;
+      color: $primary;
+      font-family: DM Sans;
+      font-size: 18px;
+      font-style: normal;
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+
+  @include media("<tablet") {
+    &-content {
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      img {
+        width: 100%;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.b_container {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  padding-bottom: 10rem;
+  border-radius: 16px;
+
+  .b_card {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 24px;
+    margin: 0 1rem;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        color: $primary;
+        font-family: DM Sans;
+      }
+      p {
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 156%;
+      }
+      img {
+        margin-top: 24px;
+        width: 480px;
+        border-radius: 5px;
       }
     }
   }

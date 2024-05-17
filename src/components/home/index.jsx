@@ -6,6 +6,7 @@ import HomeEmpower from "./empower";
 import HomeEngage from "./engage";
 import HomeExcel from "./excel";
 import HomeMission from "./mission";
+import HomeBusiness from "./business";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,8 @@ export default function HomePage() {
       <HomeMission />
       {/* <HomeEngage /> */}
       <HomeAddOn />
+      <HomeBusiness />
+
       <HomeEmpower />
       <br />
       <br />
