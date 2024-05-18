@@ -5,7 +5,7 @@ export default function Intro() {
     <>
       <section className="j_home">
         <div className="j_home-intro">
-          <p>
+          <h2>
             Get your
             <br />
             <span className="">earnings </span> when
@@ -24,7 +24,7 @@ export default function Intro() {
               />
               WhatsApp
             </div> */}
-          </p>
+          </h2>
           <span className="intro-text my-2">
             Juiceme gives employees access to their salary for <br />
             the days they worked any time before payday via <br /> WhatsApp

@@ -25,11 +25,11 @@ export default function HomeAddOn() {
           </div> */}
         </div>
         <section className="j_add-on-section">
-          <div className="j_add-on-left">
+          <div className="j_add-on-section-left">
             <img src={AddOnImage} width="800" height="800" alt="addon-image" />
           </div>
 
-          <div className="j_add-on-right my-5">
+          <div className="j_add-on-section-right my-5">
             <div className="flex my-2">
               <img className="my-auto" src={Icon3} alt="excel-icon" />
 
