@@ -34,8 +34,7 @@ export default function HomeAddOn() {
               <img className="my-auto" src={Icon3} alt="excel-icon" />
 
               <span className="my-auto mx-2">
-                Highly secured, cloud-based <br />
-                platform connected to WhatsApp
+                Highly secured, cloud-based platform connected to WhatsApp
               </span>
             </div>
             <div className="flex my-2">
